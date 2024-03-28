@@ -1,0 +1,4 @@
+name: Floo
+version: 1.0
+main: io.github.adamson.MCFloo
+api-version: 1.19
