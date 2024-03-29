@@ -54,7 +54,7 @@ public class NetworkRepo {
 
     public void add(String name, Location location) {
         FurnaceLocation[] all = all();
-        add(all[all.length - 1].id() + 1, name, location.getWorld().getName() + "," + location.getX() + "," + location.getY() + "," + location.getZ() + "," + location.getYaw() + "," + location.getPitch());
+        add(all.length > 0 ? all[all.length - 1].id() + 1 : 0, name, location.getWorld().getName() + "," + location.getX() + "," + location.getY() + "," + location.getZ() + "," + location.getYaw() + "," + location.getPitch());
     }
 
     private void add(int id, String name, String locationString) {
